@@ -18,17 +18,17 @@
         filled
         v-model="surname"
         label="Your surname *"
-        hint="Name and surname"
+        hint="surname"
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'Please type something']"
       />
       <q-input
         filled
         v-model="id"
-        label="id *"
-        hint="id"
+        label="Enter your ID *"
+        hint="ID SOMETHING"
         lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type something']"
+        :rules="[ val => val && val.length > 0 || 'Please type your id']"
       />
       <q-input
         filled
