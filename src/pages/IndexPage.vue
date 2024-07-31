@@ -43,15 +43,13 @@
       />
       <q-input
         filled
-        type="language"
         v-model="language"
-        label="Your language *"
+        label="ภาษา  *"
+        hint="ภาษา"
         lazy-rules
-        :rules="[
-          val => val !== null && val !== 'ภาษา' || 'โปรดใส่ภาษา',
-          val => val > 0 && val < 100 || 'โปรดใส่ภาษา'
-        ]"
+        :rules="[ val => val && val.length > 0 || 'โปรดใส่ภาษา']"
       />
+
 
       <q-toggle v-model="accept" label="I accept the license and terms" />
 
